@@ -1,0 +1,28 @@
+<html>
+    <head>
+        <link rel="stylesheet" href="blackjack.css">
+    </head>
+    <body>
+        <nav>
+            <ul>
+              <li><a href="#">Home</a></li>
+              <li><a href="#">About</a></li>    
+              <li><a href="#">Contact</a></li>
+            </ul>
+          </nav>
+
+        <h1>Blackjack</h1>
+        <p id="message-el">Want to play a round?</p>
+        <p>Betting amount: </p>
+        <p id = "cards-el">Users Cards:</p>
+        <p id = "sum-el">Sum:</p>
+        <p id = "Dcards-el">Dealers Cards:</p>
+        <p id = "Dsum-el">Sum:</p>
+        <button id = "start-btn" onclick = "startGame()">Deal</button>
+        <button id = "stand-btn" onclick = "standPosition()">Stand</button>
+        <button id = "newcards-btn" onclick = "newcard()">Hit</button>
+        <p id = "player-el"></p>
+        <script src="blackjack.js"></script>
+
+    </body>
+</html>
