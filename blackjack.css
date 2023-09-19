@@ -32,6 +32,16 @@ button {
     margin-top: 2px;
 }
 
+#info-button {
+  padding: 2px;
+}
+
+input[type="text"] {
+  color: white;
+  background-color : #016f32; 
+
+}
+
 #betting-el {
     background-color: #016f32;
 }

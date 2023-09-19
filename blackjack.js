@@ -1,8 +1,9 @@
 
-let player = {
-    name: prompt("enter your name: "),
-    chips: prompt("enter betting amount")
-
+function getBetandName(){
+    let bettingAmount = document.getElementById("betting-amount").value;
+    let playerName = document.getElementById("player-name").value;
+    let playerEl = document.getElementById("player-el")
+    playerEl.textContent = playerName + ": $" + bettingAmount
 }
 
 let message = ""
@@ -20,11 +21,11 @@ let bettingEl = document.getElementById("betting-el")
 let DcardsEl = document.getElementById("Dcards-el")
 let DsumEl = document.getElementById("Dsum-el")
 
-let playerEl = document.getElementById("player-el")
-playerEl.textContent = player.name + ": $" + player.chips
+
 
 
 function startGame(){
+
     isAlive = true
     let firstCard = getRandomCard()
     let secondCard = getRandomCard()
@@ -86,7 +87,7 @@ function standPosition(){
         }else{
             messageEl.textContent = "User Blackjack!"
         }
-    }
+    }renderGame()
 }
 
 
